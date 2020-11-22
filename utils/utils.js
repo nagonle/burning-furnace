@@ -1,5 +1,4 @@
-
-const isPalindromo = (word) => {
+const isPalindrome = (word) => {
   a = 0
   b = word.length - 1
   while (a < b) {
@@ -10,10 +9,5 @@ const isPalindromo = (word) => {
   return true
 }
 
-/*
-console.log(true === isPalindromo('abba'))
-console.log(true === isPalindromo('aba'))
-console.log(false === isPalindromo('aaba'))
-*/
 
-module.exports.isPalindromo = isPalindromo;
+module.exports.isPalindrome = isPalindrome;

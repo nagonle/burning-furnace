@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const Products = require('../database/models/products');
-const { isPalindromo } = require('../utils/utils');
+const { isPalindrome } = require('../utils/utils');
 
 const router = Router()
 
@@ -41,7 +41,7 @@ router.post('/search', async (req, res, next) => {
   }
 
   let discount = false
-  if (products && isPalindromo(query)) {
+  if (products && isPalindrome(query)) {
     discount = true
     products = products.map((item) => {
       return {...item._doc, final_price: item.price*0.5}

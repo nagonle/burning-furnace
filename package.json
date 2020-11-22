@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "env-cmd -f develop.env nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "author": "Nicolas Gonzalez",
   "dependencies": {
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
+    "jest": "^26.6.3",
     "nodemon": "^2.0.6"
   }
 }
