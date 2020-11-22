@@ -4,7 +4,9 @@ start:
 build:
 	docker build -t api .
 run:
-	docker run --rm -d --env-file develop.env -p 7000:7000 api
+	docker run --rm --name api-js -d --env-file develop.env -p 7000:7000 api
+stop:
+	docker stop api-js
 
 # Development tools
 id:
