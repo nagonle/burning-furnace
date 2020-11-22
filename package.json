@@ -8,7 +8,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "env-cmd -f dev.local.env nodemon app.js",
+    "dev": "env-cmd -f develop.env nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicolas Gonzalez",
