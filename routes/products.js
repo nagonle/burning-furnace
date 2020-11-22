@@ -44,7 +44,7 @@ router.post('/search', async (req, res, next) => {
   if (products && isPalindrome(query)) {
     discount = true
     products = products.map((item) => {
-      return {...item._doc, final_price: item.price*0.5}
+      return {...item._doc, final_price: Math.round(item.price*0.5)}
     })
   }
   res.send({ msg, discount, products })
